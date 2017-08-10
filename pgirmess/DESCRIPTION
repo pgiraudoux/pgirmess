@@ -1,0 +1,11 @@
+Package: pgirmess
+Date: 2017-03-27
+Version: 1.6.8
+Title: Data Analysis in Ecology
+Author: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
+Maintainer: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
+Description: Tools for spatial analysis and model selection in ecology.
+Imports: boot (>= 1.3-4), maptools (>= 0.8-36), rgdal (>= 0.7-8), rgeos (>= 0.3-8), sp (>= 0.9-97), spdep (>= 0.5-43), splancs (>= 2.01-31)
+Suggests: MASS (>= 7.3-1), nlme (>= 3.1-120)
+License: GPL (>= 2)
+URL: http://perso.orange.fr/giraudoux
