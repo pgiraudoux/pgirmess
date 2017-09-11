@@ -8,7 +8,7 @@
 \usage{
 write.delim(x, file = "", row.names = FALSE, quote = FALSE, sep = "\t", ...)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{x}{ a data.frame }
   \item{file}{ a character string for file name }
@@ -17,14 +17,14 @@ write.delim(x, file = "", row.names = FALSE, quote = FALSE, sep = "\t", ...)
   \item{sep}{ the field separator string.  Values within each row of 'x' are separated by this string. }
   \item{\dots}{ additional arguments accepted by write.table }
 }
+
 \details{
   Simple wrapper of write.table.
 }
-\value{
- An ascii text file, tab delimited.
-}
 
-\author{ Patrick Giraudoux <pgiraudo@univ-fcomte.fr> }
+\value{
+ A tab delimited text file.
+}
 
 \seealso{ \code{\link{write.table}} }
 \examples{
