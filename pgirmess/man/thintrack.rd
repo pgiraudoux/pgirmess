@@ -16,8 +16,7 @@ thintrack(spdf,mindist=100)
 
 }
 \details{
-Tracks downloaded from GPS often provide an unecessary large density of points at irregular distances. This function starts reading from the first point of the track and removes all points within a user specified radius (USR), then reads the closest point and removes all points within the USR, and so on... 
-
+Tracks downloaded from GPS often provide an unecessary large density of points at irregular distances. This function starts reading from the first point of the track and removes all points within a user specified radius (USR), then reads the closest point and removes all points within the USR, and so on... Thintrack is not optimized for big files and can be prohibitively slow (at each step, all data points of the track are taken into account to select points within the radius, using \code{\link[splancs]{inout}, which can take time). In this case it is advisable to work on data subsets and merge them afterwards
   }
   
 \value{
