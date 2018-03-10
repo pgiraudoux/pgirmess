@@ -17,7 +17,7 @@ thintrack(spdf,mindist=100)
 }
 
 \details{
-Tracks downloaded from GPS often provide an unecessary large density of points at irregular distances. This function starts reading from the first point of the track and removes all points within a user specified radius (USR), then reads the closest point and removes all points within the USR, and so on...
+Tracks downloaded from GPS often provide an unecessary large density of points at irregular distances. This function starts reading from the first point of the track and removes all points within a user specified radius (USR), then reads the next point and removes all points within the USR, and so on...
   }
   
 \value{
