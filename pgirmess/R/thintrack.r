@@ -1,20 +1,20 @@
 
 thintrack<-function(spdf,mindist=100){
   st<-FALSE
-  cds<-coordinates(spdf)
-  cds<-cds[!duplicated(cds),]
-  nbb<-1
+  cds<-coordinates(spdf)[1,]
   cds2<-NULL
-   while(!st){
-    cds2<-rbind(cds2,cds[nbb,])
-    mycirc<-polycirc(mindist,unlist(cds[nbb,]))
-    idx<-inout(cds,mycirc)    
-    cds<-cds[!idx,,drop=FALSE]
-    if (nrow(cds)>1) {
-        nnb<-knearneigh(rbind(cds2[nrow(cds2),],cds),k=1)
-        nbb<-nnb$nn[1,1]-1
+  i<-0
+  while(!st){
+    mycirc<-polycirc(mindist,cds)
+    mycirc<-SpatialPolygons(list(Polygons(list(Polygon(mycirc)),ID=1)),proj4string=CRS(proj4string(spdf)))
+    idx<-over(spdf,mycirc)    
+    spdf<-spdf[is.na(idx),]
+    cds2<-rbind(cds2,cds)
+    if (nrow(spdf)>=1) {
+      cds<-coordinates(spdf)[1,]
     } else st<-TRUE
   }
+  rownames(cds2)<-1:nrow(cds2)
   cds2<-data.frame(cds2)
   names(cds2)<-c("x","y")
   coordinates(cds2)<-~x+y

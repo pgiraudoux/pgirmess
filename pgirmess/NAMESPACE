@@ -1,5 +1,5 @@
 
-importFrom(sp, bbox, coordinates, 'coordinates<-', fullgrid, 'fullgrid<-', over, Polygon, Polygons, proj4string, 'proj4string<-', SpatialPointsDataFrame, SpatialLinesDataFrame, SpatialPolygons, SpatialPolygonsDataFrame, spChFIDs) 
+importFrom(sp, bbox, coordinates, 'coordinates<-', CRS, fullgrid, 'fullgrid<-', over, Polygon, Polygons, proj4string, 'proj4string<-', SpatialPointsDataFrame, SpatialLinesDataFrame, SpatialPolygons, SpatialPolygonsDataFrame, spChFIDs) 
 importFrom(boot,boot)
 importFrom(rgdal, GDALinfo, readGDAL, readOGR, showWKT)
 importFrom(maptools, spRbind)
