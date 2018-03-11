@@ -1,10 +1,11 @@
 Package: pgirmess
-Version: 1.6.8
-Date: 2018-03-10
-Title: Data Analysis in Ecology
-Author: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
+Version: 1.6.9
+Date: 2018-03-11
+Title: Spatial Analysis and Data Mining for Field Ecologists
+Authors@R: c(person("Patrick", "Giraudoux", role = c("aut", "cre"), email = "patrick.giraudoux@univ-fcomte.fr"))
+Author: Patrick Giraudoux [aut, cre]
 Maintainer: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
-Description: Tools for spatial analysis and model selection in ecology.
+Description: Set of tools for reading, writing and transforming spatial and seasonal data in ecology, model selection and specific statistical tests. It includes functions to discretize polylines into regular point intervals, link observations to those points, computes geographical coordinates at regular intervals between waypoints, reads subsets of big rasters, computes zonal statistics or table of categories within polygons or buffers centered on spatial points from a raster. The package also provides miscellaneous functions for model selection, spatial statistics, geometries, writing data.frame with Chinese characters, and some other functions for field ecologists.
 Imports: boot (>= 1.3-4), maptools (>= 0.8-36), rgdal (>= 0.7-8), rgeos (>= 0.3-8), sp (>= 0.9-97), spdep (>= 0.5-43), splancs (>= 2.01-31)
 Suggests: MASS (>= 7.3-1), nlme (>= 3.1-120)
 License: GPL (>= 2)
