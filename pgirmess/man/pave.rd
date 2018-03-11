@@ -20,15 +20,12 @@ pave(cordseg, yc, xc, fix.edge=NULL, ydown = TRUE, output = "list")
 }
 \details{
   The segment must have x1 < x2. If not, it is automatically reordered. When "spdf" is selected the output is an object of class
-  SpatialPolygonsDataframe. It has a plot method and can straightfully be handled by writeShapePoly (see \code{\link[maptools]{readShapePoly}}) of the maptools library to write a shapefile.
-  The value of the edge length of a cell can passed with the argument fix.edge. In this case, the coordinates of the segment right top are re-computed to adjust the cell edge to an user defined fixed value. 
+  \code{\link[sp]{SpatialPolygonsDataFrame}}. The value of the edge length of a cell can passed with the argument fix.edge. In this case, the coordinates of the segment right top are re-computed to adjust the cell edge to an user defined fixed value. 
 }
 \value{
-  According to the output selected, a list of polygon coordinates, a 2 column matrix with the nodes coordinates or a SpatialPolygonsDataframe.
+  According to the output selected, a list of polygon coordinates, a 2 column matrix with the nodes coordinates or a \code{\link[sp]{SpatialPolygonsDataFrame}}.
   
 }
-
-\author{ Patrick Giraudoux <pgiraudo@univ-fcomte.fr> }
 
 \seealso{ \code{\link[sp]{SpatialPolygonsDataFrame-class}}, \code{\link[maptools]{readShapePoly}}, \code{\link[rgdal]{readOGR}},\code{\link[sp]{over}}, \code{\link[pgirmess]{diag2edge}} }
 

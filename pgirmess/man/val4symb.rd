@@ -1,9 +1,9 @@
 \name{val4symb}
 \alias{val4symb}
 
-\title{ Centres a numerical vector on a parameter position and provides absolute values and colors according to negative and positive values}
+\title{ Center a numerical vector on a parameter position and provides absolute values and colors according to negative and positive values}
 \description{
-   Centres a numerical vector on a parameter position and provides absolute values and colors according to negative and positive values
+   Center a numerical vector on a parameter position and provides absolute values and colors according to negative and positive values
 }
 \usage{
 val4symb(x, FUN=mean, col = c("blue", "red"),...)
