@@ -3,7 +3,7 @@
 \docType{data}
 \title{  Jackal and Genet diet in Algeria }
 \description{
-  This data set gives the results of dietary analysis performed by Mansour Amroun in two sites of Kabylie, Algeria
+  This data set gives the results of dietary analysis performed by Amroun Mansour in two sites of Kabylie, Algeria
 }
 \usage{data(preybiom)}
 \format{

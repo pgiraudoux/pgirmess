@@ -55,7 +55,7 @@
    \item{.}{Burnham, K.P. and Anderson, D.R. (2002) Model Selection and Multimodel Inference: a Practical Information-Theoretic Approach, 2nd edn., Springer-Verlag, New York. 353 pp}
  }
  }
-\author{ Patrick Giraudoux and David Pleydell: pgiraudo@univ-fcomte.fr, dpleydel@univ-fcomte.fr }
+\author{ Patrick Giraudoux and David Pleydell: pgiraudo@univ-fcomte.fr, david.pleydell@inra.fr }
 
 \seealso{ \code{\link{AIC}},\code{\link{logLik}}, \code{\link[AICcmodavg]{aictab}} }
 

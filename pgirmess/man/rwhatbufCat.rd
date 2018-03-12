@@ -1,19 +1,19 @@
 \name{rwhatbufCat}
 \alias{rwhatbufCat}
-\title{Analyses the contents of a SpatialPixelsDataFrame or a SpatialGridDataFrame of categorical values within various buffer sizes centred on points }
-\description{Analyses the contents of a SpatialPixelsDataFrame or a SpatialGridDataFrame of categorical values within various buffer sizes centred on points }
+\title{Extract the contents of a SpatialPixelsDataFrame or a SpatialGridDataFrame of categorical values within various buffer sizes centred on spatial points}
+\description{Extract the contents of a SpatialPixelsDataFrame or a SpatialGridDataFrame of categorical values within various buffer sizes centred on points}
 
 \usage{rwhatbufCat(rast, sites, bufsizes, att=1)}
 
 \arguments{
   \item{rast}{object of class \code{\link[sp]{SpatialPixelsDataFrame}} or \code{\link[sp]{SpatialGridDataFrame}} to analyse}
-  \item{sites}{object of class inheriting from \code{\link[sp]{SpatialPoints}} containing the points on which buffers must be centered}
+  \item{sites}{object of class inheriting from \code{\link[sp]{SpatialPoints}} containing the points on which buffers must be centred}
   \item{bufsizes}{a vector of buffer radii, e.g. c(500, 1000, 1500)}
   \item{att}{column number of the attribute variable}
 }
 
 \details{
- This function generates a data.frame with the frequency of each category of a raster map within various radius buffers centered on point sites.
+ This function generates a data.frame with the frequency of each category of a raster map within various radius buffers centred on spatial points.
 }
 
 \value{ A dataframe, with the buffer size as first column, the site ID as second column. The other colums are the pixel frequency of each category}

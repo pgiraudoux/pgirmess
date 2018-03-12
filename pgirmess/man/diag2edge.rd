@@ -21,8 +21,6 @@ diag2edge(cordseg)
   A 2x2 matrix of points coordinates
 }
 
-\author{  Patrick Giraudoux <pgiraudo@univ-fcomte.fr> }
-
 
 \seealso{ \code{\link[pgirmess]{pave}} }
 \examples{

@@ -7,7 +7,7 @@
 \usage{
 pclig(matr)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{matr}{ a matrix or a data.frame}
 }

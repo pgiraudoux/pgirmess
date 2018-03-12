@@ -3,7 +3,7 @@
 
 \title{ Convert a transect coordinate file into a matrix with segment coordinates. }
 \description{
-  Convert a transect coordinate file (eg: landmarks) into a matrix with segment coordinates.
+  Convert a transect coordinate file (e.g.: waypoints) into a matrix with segment coordinates.
 }
 \usage{
 trans2seg(vect)
@@ -13,10 +13,10 @@ trans2seg(vect)
    \item{vect}{ A two column matrix or data.frame }
 }
 \details{
-  The argument passed is a matrix or data.frame of two columns each row is a transect interval; each column must start (first row) and end (last row) with a landmark ; intermediate landmarks must have coordinates in the two columns of the row. Other rows must be NA values.
+  The argument passed is a matrix or data.frame of two columns each row is a transect interval; each column must start (first row) and end (last row) with a landmark ; intermediate waypoints must have coordinates in the two columns of the row. Other rows must be NA values.
 }
 \value{
-  A matrix of 4 columns to be passed eg to fonctions as "segments".
+  A matrix of 4 columns to be passed e.g. to functions as "segments".
 }
 
 

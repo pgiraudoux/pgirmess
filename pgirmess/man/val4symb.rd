@@ -24,8 +24,6 @@ val4symb(x, FUN=mean, col = c("blue", "red"),...)
 
 }
 
-\author{ Patrick Giraudoux, pgiraudo@univ-fcomte.fr }
-
 \seealso{ \code{\link{symbols}}, \code{\link{mean}}, \code{\link{median}}, \code{\link{scale}} }
 \examples{
 x<-rnorm(30)

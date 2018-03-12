@@ -3,8 +3,7 @@
 
 \title{Provide square polygons or their node coordinates along a segment}
 \description{
-  Provide a user-defined cellgrid of polygon squares (or square node points) along a segment.
-  This can be used to define a sampling grid for spatial analysis.
+  Provide a user-defined cell grid of polygon squares (or square node points) along a segment. This can be used to define a sampling grid for spatial analysis.
 }
 \usage{
 pave(cordseg, yc, xc, fix.edge=NULL, ydown = TRUE, output = "list")

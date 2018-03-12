@@ -20,7 +20,6 @@ shannonbioboot(data1, B = 1000)
 \value{
   An object of class boot including the bootstrap statistics for H' (t1*) and J' (t2*)
 }
-\author{Patrick Giraudoux <pgiraudo@univ-fcomte.fr }
 
 \seealso{ \code{\link[boot]{boot}}, \code{\link[boot]{boot.ci}}, \code{\link[pgirmess]{shannonbio}} }
 \examples{

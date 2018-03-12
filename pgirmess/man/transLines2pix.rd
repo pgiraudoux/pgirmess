@@ -1,9 +1,9 @@
 \name{transLines2pix}
 \alias{transLines2pix}
 
-\title{ Convert a SpatialLines or a SpatialLinesDataFrame object into SpatialPointsDataFrame with points at regular distance along the lines }
+\title{ Convert a SpatialLines or a SpatialLinesDataFrame object into SpatialPointsDataFrame with spatial points at regular distance along the lines }
 \description{
-  Convert a SpatialLines or a SpatialLinesDataFrame object into SptaialPointsDataFrame with points at regular distance along the lines
+  Convert a SpatialLines or a SpatialLinesDataFrame object into SptaialPointsDataFrame with spatial points at regular distance along the lines
 }
 \usage{
 transLines2pix(spldf,mindist=100)
@@ -14,7 +14,7 @@ transLines2pix(spldf,mindist=100)
   \item{mindist}{the distance between two points (default to 100)  }
 }
 \details{
-  This function can be used e.g to discretize any track line (roads, paths, transects, etc.) into series of regular points. Each point may be though of as corresponding to the centre of one interval. Beware that if mindist is larger than the distance between nodes, the output file will keep the nodes. Furthermore, mindist might not be fully respected in some spatial configurations. In such cases to filter points using \code{\link[pgirmess]{thintrack}} complementarily is advised.
+  This function can be used e.g to discretize track lines (roads, paths, transects, etc.) into series of regular points. Each point is the centre of one interval. Beware that if mindist is larger than the distance between nodes, the output file will keep the nodes. Furthermore, mindist might not be fully respected in some spatial configurations. In such cases to filter points using \code{\link[pgirmess]{thintrack}} complementarily is advised.
 }
 \value{
   A \code{\link[sp]{SpatialPointsDataFrame}}

@@ -17,7 +17,7 @@ date2winter(x, first = 10, last=4)
 }
 
 \details{
- In ecology, time data must often be analysed on a time span category covering two successive years (eg the winter period). This function convert POSIXt dates into categories corresponding to the time span stretching from a user defined month of a given year (by default October) to a user-defined month of the following year (by default April). If date month is out of the user defined time span the value 'Excluded' is returned.
+ In ecology, time data must often be analysed on a time span category covering two successive years (e.g. the winter period). This function convert POSIXt dates into categories corresponding to the time span stretching from a user defined month of a given year (by default October) to a user-defined month of the following year (by default April). If date month is out of the user defined time span the value 'Excluded' is returned.
 }
 
 \value{

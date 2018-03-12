@@ -23,8 +23,6 @@ postxt(cd = "ul")
   \item{y }{coordinate on y}
 }
 
-\author{ Patrick Giraudoux, patrick.giraudoux@univ-fcomte.fr }
-
 \seealso{ \code{\link{text}}}
 \examples{
 

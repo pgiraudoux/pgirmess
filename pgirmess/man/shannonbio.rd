@@ -18,7 +18,6 @@ shannonbio(data1)
 \value{
   A vector of two values: Shannon's and equitability indices
 }
-\author{ Patrick Giraudoux <pgiraudo@univ-fcomte.fr> }
 
 \seealso{ \code{\link[pgirmess]{shannon}}, \code{\link[pgirmess]{difshannonbio}} }
 \examples{

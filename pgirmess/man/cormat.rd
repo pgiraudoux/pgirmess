@@ -27,8 +27,6 @@ cormat(donnees, method = "spearman", sep = FALSE)
   \item{p.value }{The Ho probability matrix}
 
 }
-\author{ Patrick Giraudoux <pgiraudo@univ-fcomte.fr> }
-
 
 \seealso{ \code{\link{cor}}, \code{\link{cor.test}} }
 \examples{

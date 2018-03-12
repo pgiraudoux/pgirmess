@@ -21,8 +21,6 @@ piankabioboot(dataframe1, dataframe2, B = 1000, probs = c(0.025, 0.975))
   a vector of the two CI limits
 }
 
-\author{ Patrick Giraudoux <pgiraudo@univ-fcomte.fr> }
-
 \seealso{ \code{\link{piankabio}} }
 \examples{
 data(preybiom)

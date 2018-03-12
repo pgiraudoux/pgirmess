@@ -20,8 +20,6 @@ tabcont2categ(tab)
  A data frame
 }
 
-\author{Patrick Giraudoux <pgiraudo@univ-fcomte.fr>}
-
 \examples{
 mydata<-as.data.frame(matrix(rpois(9,5),nr=3,nc=3))
 names(mydata)<-LETTERS[1:3]

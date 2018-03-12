@@ -29,7 +29,8 @@ correlog(coords, z, method="Moran", nbclass = NULL,...)
   \item{n }{the number of pairs}
 }
 \references{ see library spdep }
-\author{ Patrick Giraudoux pgiraudo@univ-fcomte.fr, Colin Beale c.beale@macaulay.ac.uk and Mike Treglia mike-treglia@utulsa.edu }
+
+\author{Patrick Giraudoux pgiraudo@univ-fcomte.fr, Colin Beale c.beale@macaulay.ac.uk and Mike Treglia mike-treglia@utulsa.edu }
  
 \section{Warning }{Computing can take a long time for large data sets} 
 

@@ -22,7 +22,7 @@ difshannonbio(dat1, dat2, R = 1000, probs = c(0.025, 0.975))
   A list with the confidence interval of H' and J'
 
 }
-\author{ patrick.giraudoux <pgiraudo@univ-fcomte.fr> }
+
 \seealso{ \code{\link{shannonbio}}}
 \examples{
 data(preybiom)

@@ -1,9 +1,9 @@
 \name{trans2pix}
 \alias{trans2pix}
 
-\title{ Convert a transect coordinate file with some landmarks into a matrix with intermediate coordinates. }
+\title{ Convert a transect coordinate file with some waypoints separated by NA into a matrix with intermediate coordinates replacing NA. }
 \description{
-  Convert a transect coordinate file with some landmarks and NA values in between into a matrix with intermediate coordinates. 
+  Convert a transect coordinate file with some waypoints separated by NA into a matrix with intermediate coordinates replacing NA.
 }
 \usage{
 trans2pix(vect)
@@ -13,7 +13,7 @@ trans2pix(vect)
   \item{vect}{ A two column matrix or data.frame }
 }
 \details{
-  If vect has more than two column the two first column only are read. This function computes the intermediate coordinates of each lines materialised with NA values.
+  If vect has more than two column the two first column only are read. This function computes the intermediate coordinates between two waypoints replacing NA values.
 }
 \value{
   A matrix with the intermediate coordinates computed.
@@ -29,4 +29,4 @@ plot(x,y,col=cols,pch=19)
 plot(trans2pix(cbind(x,y)),col=cols,pch=19)
 
 }
-\keyword{ utilities, spatial }% at least one, from doc/KEYWORDS
+\keyword{ utilities, spatial }
