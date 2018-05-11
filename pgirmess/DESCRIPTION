@@ -1,6 +1,6 @@
 Package: pgirmess
 Version: 1.7.0
-Date: 2018-03-11
+Date: 2018-05-11
 Title: Spatial Analysis and Data Mining for Field Ecologists
 Authors@R: c(person("Patrick", "Giraudoux", role = c("aut", "cre"), email = "patrick.giraudoux@univ-fcomte.fr"), person("Jean-Philippe", "Antonietti", role = c("ctb"), email = "Jean-Philippe.Antonietti@unil.ch"), person("Colin", "Beale", role = c("ctb"), email = "c.beale@macaulay.ac.uk"),person("Renaud", "Lancelot", role = c("ctb"), email = "renaud.lancelot@cirad.fr"), person("David", "Pleydell", role = c("ctb"), email = "david.pleydell@inra.fr"), person("Mike", "Treglia", role = c("ctb"), email = "mike-treglia@utulsa.edu"))
 Author: Patrick Giraudoux [aut, cre], Jean-Philippe Antonietti [ctb], Colin Beale [ctb], Renaud Lancelot [ctb], David Pleydell [ctb], Mike Treglia [ctb]
