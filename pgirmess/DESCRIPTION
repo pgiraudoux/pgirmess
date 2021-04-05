@@ -1,5 +1,5 @@
 Package: pgirmess
-Version: 1.7.1
+Version: 1.7.0
 Date: 2021-03-05
 Title: Spatial Analysis and Data Mining for Field Ecologists
 Authors@R: c(person("Patrick", "Giraudoux", role = c("aut", "cre"), email = "patrick.giraudoux@univ-fcomte.fr"), person("Jean-Philippe", "Antonietti", role = c("ctb"), email = "Jean-Philippe.Antonietti@unil.ch"), person("Colin", "Beale", role = c("ctb"), email = "c.beale@macaulay.ac.uk"),person("Renaud", "Lancelot", role = c("ctb"), email = "renaud.lancelot@cirad.fr"), person("David", "Pleydell", role = c("ctb"), email = "david.pleydell@inra.fr"), person("Mike", "Treglia", role = c("ctb"), email = "mike-treglia@utulsa.edu"))
@@ -9,4 +9,4 @@ Description: Set of tools for reading, writing and transforming spatial and seas
 Imports: boot (>= 1.3-4), maptools (>= 0.8-36), rgdal (>= 0.7-8), rgeos (>= 0.3-8), sp (>= 0.9-97), spdep (>= 1.1-7), splancs (>= 2.01-31)
 Suggests: MASS (>= 7.3-1), nlme (>= 3.1-120)
 License: GPL (>= 2)
-URL: http://perso.orange.fr/giraudoux
+URL: https://giraudoux.pagesperso-orange.fr
