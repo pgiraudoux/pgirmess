@@ -41,4 +41,4 @@ transLines2pix(spldf,mindist=100)
      plot(trpt,add=TRUE)
 }
 
-\keyword{ utilities, spatial }
+\keyword{spatial}

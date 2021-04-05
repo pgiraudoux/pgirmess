@@ -86,4 +86,4 @@ plot(trackObs,cex=trackObs@data$nObs/3,pch=19, col="red",add=TRUE)
      
 }
 
-\keyword{ utilities, spatial }
+\keyword{spatial}

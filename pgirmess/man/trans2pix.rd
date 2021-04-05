@@ -29,4 +29,4 @@ plot(x,y,col=cols,pch=19)
 plot(trans2pix(cbind(x,y)),col=cols,pch=19)
 
 }
-\keyword{ utilities, spatial }
+\keyword{spatial}
