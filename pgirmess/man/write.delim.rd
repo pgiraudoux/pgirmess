@@ -30,8 +30,10 @@ write.delim(x, file = "", row.names = FALSE, quote = FALSE, sep = "\t", ...)
 \examples{
  data(preybiom)
  write.delim(preybiom[1:10,]) # output to the console
- write.delim(preybiom[1:10,],file="Myfile.txt") # write a file in the working directory
  
+\dontrun{
+ write.delim(preybiom[1:10,],file="Myfile.txt") # write a file in the working directory
+}
  }
 
 \keyword{ utilities }

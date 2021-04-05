@@ -12,7 +12,7 @@ importFrom(stats, AIC, anova, chisq.test, cor.test, dist,family, formula, ks.tes
 importFrom(utils, flush.console, read.delim, select.list, write.table) 
 if(tools:::.OStype() == "windows") importFrom(utils, winDialog)
 
-export(CI, PermTest, Segments, TukeyHSDs, classnum, cormat, correlog, date2winter, diag2edge, difshannonbio, dirProj, dirSeg, distNNeigh, distNode, distSeg, distTot, expandpoly, findR, friedmanmc, gps2gpx, kruskalmc, ks.gof, mergeTrackObs, pairsrp, pave, pclig, permcont, piankabio, piankabioboot, polycirc, polycirc2, postxt, print.mc, QGIS2sp, readGDALbbox, readVista, rmls, rwhatbufCat, rwhatbufCat2, rwhatbufNum, selMod, shannon, shannonbio, shannonbioboot, tabcont2categ, thintrack, trans2pix, trans2seg, transLines2pix, uploadGPS, val4symb, valchisq, write.delim, writecn.delim, writeGPX, writePRJ) 
+export(CI, PermTest, Segments, TukeyHSDs, classnum, cormat, correlog, date2winter, diag2edge, difshannonbio, dirProj, dirSeg, distNNeigh, distNode, distSeg, distTot, expandpoly, findR, friedmanmc, kruskalmc, ks.gof, mergeTrackObs, pairsrp, pave, pclig, permcont, piankabio, piankabioboot, polycirc, polycirc2, postxt, print.mc, QGIS2sp, readGDALbbox, readVista, rmls, rwhatbufCat, rwhatbufCat2, rwhatbufNum, selMod, shannon, shannonbio, shannonbioboot, tabcont2categ, thintrack, trans2pix, trans2seg, transLines2pix, uploadGPS, val4symb, valchisq, write.delim, writecn.delim, writeGPX, writePRJ) 
 
 S3method(print, PermTest)
 S3method(PermTest, lm)
