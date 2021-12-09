@@ -1,18 +1,18 @@
-\name{thintrack}
-\alias{thintrack}
+\name{st_thintrack}
+\alias{st_thintrack}
 
 \title{ Thin a track just keeping the points separated by a user defined minimal distance }
 
 \description{
-  Thin a track stored as a \code{\link[sp]{SpatialPointsDataFrame}} object, just keeping the points separated by a user defined minimal distance.
+  Thin a track stored as a \code{\link[sf]{sf}} POINT object, just keeping the points separated by a user defined minimal distance.
 }
 
 \usage{
-thintrack(spdf,mindist=100)
+st_thintrack(spdf,mindist=100)
 }
 
 \arguments{
-  \item{spdf}{a \code{\link[sp]{SpatialPointsDataFrame}} of point tracks }
+  \item{spdf}{a \code{\link[sf]{sf}} of POINT tracks }
   \item{mindist}{ minimal distance requested between two points (default = 100)}
 }
 
@@ -21,14 +21,15 @@ Tracks downloaded from GPS often provide an unnecessary large density of points 
   }
   
 \value{
-  A \code{\link[sp]{SpatialPoints}} object of the track thinned.
+  A \code{\link[sf]{sf}} POINT object of the track thinned.
 }
 
 \seealso{ \code{\link{mergeTrackObs}} }
 
 \examples{
 
-library(sp)
+if(require(sf)){
+
 mySPDF<-structure(list(x = c(748775, 748807, 748834, 748854, 748871, 
 748873, 748880, 748910, 748919, 748917, 748921, 748923, 748924, 
 748921, 748921, 748921, 748922, 748915, 748616, 748613, 748612, 
@@ -45,14 +46,16 @@ mySPDF<-structure(list(x = c(748775, 748807, 748834, 748854, 748871,
 "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", 
 "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"
 ), class = "data.frame")
-coordinates(mySPDF)<-~x+y
+
+mySPDF<-st_as_sf(mySPDF,coords=c("x","y"))
+
+plot(st_geometry(mySPDF),pch=19,cex=0.5)
+plot(st_thintrack(mySPDF),pch=19,cex=0.7,col="red",add=TRUE)
 
 plot(mySPDF,pch=19,cex=0.5)
-plot(thintrack(mySPDF),pch=19,cex=0.7,col="red",add=TRUE)
+plot(st_thintrack(mySPDF,min=200),pch=19,cex=0.7,col="red",add=TRUE)
 
-plot(mySPDF,pch=19,cex=0.5)
-plot(thintrack(mySPDF,min=200),pch=19,cex=0.7,col="red",add=TRUE)
-
+}
 }
 
 

@@ -1,5 +1,17 @@
 transLines2pix<-function(spldf,mindist=100){
-  spldf.lst<-lapply(unlist(lapply(lapply(spldf@lines,function(spLines) spLines),function(tmp) tmp@Lines)),function(x) x@coords)
+  # extraction of the node coordinates, row by row
+  spldf0.lst<-rep(list(NA),length(spldf))
+  for(i in 1:length(spldf)) spldf0.lst[[i]]<-data.frame(st_coordinates(spldf[[i]]))
+  spldf0.lst<-lapply( spldf0.lst,function(x) split(x,x[,3]))
+  
+  spldf.lst<-NULL
+  for(i in 1:length(spldf0.lst)){
+    for(ii in 1:length(spldf0.lst[[i]])){
+      spldf.lst<-c(spldf.lst,list(spldf0.lst[[i]][[ii]][,1:2]))
+    }
+  }
+  
+  # segmentation
   spldf2.lst<-rep(list(NULL),length(spldf.lst))
   mindist<-mindist
   for (i in 1:length(spldf.lst)) {
@@ -21,8 +33,7 @@ transLines2pix<-function(spldf,mindist=100){
 intervalles<-NULL
 for(i in 1:length(spldf2.lst)) intervalles<-rbind(intervalles,spldf2.lst[[i]])
 intervalles<-data.frame(ID=1:nrow(intervalles),intervalles)
-coordinates(intervalles)<-~X1+X2
-proj4string(intervalles)<-proj4string(spldf)
-intervalles
+
+st_as_sf(intervalles,coords=c("X1","X2"),crs=st_crs(spldf))
 
 }
