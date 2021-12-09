@@ -76,12 +76,8 @@ for (i in 1:length(gr)) polygon(gr[[i]])
 gr<-pave(coord,20,4,ydown=FALSE) # y increasing
 for (i in 1:length(gr)) polygon(gr[[i]],border="blue")
 
-\dontrun{
-# Writing a polygon shapefile
+# geting a SpatialPolygonsDataFrame
 gr<-pave(coord,20,4,output="spdf") # y decreasing
-library(maptools)
-writePolyShape(gr, "myshapefilename")
-}
 
 }
 

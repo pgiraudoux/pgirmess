@@ -1,20 +1,15 @@
 
-importFrom(sp, bbox, coordinates, 'coordinates<-', CRS, fullgrid, 'fullgrid<-', over, Polygon, Polygons, proj4string, 'proj4string<-', SpatialPointsDataFrame, SpatialLinesDataFrame, SpatialPolygons, SpatialPolygonsDataFrame, spChFIDs) 
+importFrom(sp,  Polygon, Polygons, SpatialPolygons, SpatialPolygonsDataFrame) 
 importFrom(boot,boot)
-importFrom(rgdal, GDALinfo, readGDAL, readOGR, showWKT)
-importFrom(maptools, spRbind)
-importFrom(rgeos, readWKT)
 importFrom(spdep,card,dnearneigh,knearneigh,knn2nb, nb2listw, nbdists, geary.test, moran.test)
-importFrom(splancs,inout)
 importFrom(grDevices, grey, nclass.FD, nclass.Sturges,nclass.scott)
 importFrom(graphics, abline, axis, lines, pairs, par, plot, points, segments, strwidth, text)
-importFrom(stats, AIC, anova, chisq.test, cor.test, dist,family, formula, ks.test, lm, logLik, lowess,model.frame, na.omit, prop.test, qnorm, quantile,residuals, sd, terms, update)
-importFrom(utils, flush.console, read.delim, select.list, write.table) 
-if(tools:::.OStype() == "windows") importFrom(utils, winDialog)
+importFrom(stats, AIC, anova, cor.test, dist,family, formula, ks.test, lm, logLik, lowess,model.frame, na.omit, prop.test, qnorm, quantile,residuals, sd, terms, update)
+importFrom(utils, write.table)
+importFrom(sf, st_as_sf, st_coordinates, st_crs, st_difference, st_drop_geometry, st_polygon, st_sfc)
 
-export(CI, PermTest, Segments, TukeyHSDs, classnum, cormat, correlog, date2winter, diag2edge, difshannonbio, dirProj, dirSeg, distNNeigh, distNode, distSeg, distTot, expandpoly, findR, friedmanmc, kruskalmc, ks.gof, mergeTrackObs, pairsrp, pave, pclig, permcont, piankabio, piankabioboot, polycirc, polycirc2, postxt, print.mc, QGIS2sp, readGDALbbox, readVista, rmls, rwhatbufCat, rwhatbufCat2, rwhatbufNum, selMod, shannon, shannonbio, shannonbioboot, tabcont2categ, thintrack, trans2pix, trans2seg, transLines2pix, uploadGPS, val4symb, valchisq, write.delim, writecn.delim, writeGPX, writePRJ) 
+export(bbox2sf, CI, classnum, cormat, correlog, date2winter, diag2edge, difshannonbio, dirProj, dirSeg, distNNeigh, distNode, distSeg, distTot, expandpoly, findR, friedmanmc, kruskalmc, ks.gof, mergeTrackObs, pairsrp, pave, permcont, PermTest, piankabio, piankabioboot, polycirc, polycirc2, print.mc, Segments, selMod, shannon, shannonbio, shannonbioboot, st_thintrack, tabcont2categ, trans2pix, trans2seg, transLines2pix, TukeyHSDs, val4symb, write.delim, writecn.delim)
 
-S3method(print, PermTest)
 S3method(PermTest, lm)
 S3method(PermTest, glm)
 S3method(PermTest, lme)
@@ -23,11 +18,8 @@ S3method(kruskalmc, formula)
 S3method(selMod, lm)
 S3method(selMod, list)
 S3method(plot, correlog)
+S3method(print, PermTest) 
 S3method(print, correlog)
 S3method(print, mc)
-
-
-
-
 
 
