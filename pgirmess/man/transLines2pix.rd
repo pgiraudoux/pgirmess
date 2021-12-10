@@ -1,7 +1,7 @@
 \name{transLines2pix}
 \alias{transLines2pix}
 
-\title{MULTILINESTRING and/or LINESTRING into POINT geometry with points at regular distance between nodes }
+\title{Convert MULTILINESTRING and/or LINESTRING into POINT geometry with points at regular distance between nodes }
 \description{
   Convert a simple feature geometry made of MULTILINESTRING and/or LINESTRING into a  POINT geometry with points at regular distance between nodes
 }
