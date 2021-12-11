@@ -14,4 +14,4 @@ version 1.7.0 includes functions to interpolate regular positions of points betw
 
 A number of functions of this version is based on packages [rgdal](https://cran.r-project.org/web/packages/rgdal/index.html), [rgeos](https://cran.r-project.org/web/packages/rgeos/index.html) and [maptools](https://cran.r-project.org/web/packages/maptools/index.html) on schedule to be no longer maintained from 2023 onwards.
 
-**Warning:** A version 1.7.1 has been released on CRAN, the only difference with 1.7.0 being a warning message "on attach" about the transition to 2.0.0.
+***Warning:** A version 1.7.1 has been released on CRAN, the only difference with 1.7.0 being a warning message "on attach" about the transition to 2.0.0.*
