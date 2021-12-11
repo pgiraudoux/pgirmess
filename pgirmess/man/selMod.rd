@@ -61,7 +61,7 @@
 
 
 \examples{
- library(MASS)
+ if(require(MASS)){
  anorex.1 <- lm(Postwt ~ Prewt*Treat, data = anorexia)
  selMod(anorex.1)
  anorex.2 <- glm(Postwt ~ Prewt*Treat, family=gaussian,data = anorexia)
@@ -70,5 +70,6 @@
  mycomp<-selMod(list(anorex.1,anorex.2,anorex.3))
  mycomp
  attributes(mycomp)$models
+ }
 }
 \keyword{ models }

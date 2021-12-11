@@ -39,7 +39,7 @@
 
 \examples{
 
-library(MASS)
+if(require(MASS){
 mylm<-lm(Postwt~Prewt,data=anorexia)
 PermTest(mylm,B=250)
 
@@ -50,11 +50,12 @@ PermTest(mylm,B=250)
     treatment <- gl(3,3)
     glm.D93 <- glm(counts ~ outcome + treatment, family=poisson)
     PermTest(glm.D93,B=100)
+    }
 
-library(nlme)
+if(require(nlme){
 fm2 <- lme(distance ~ age + Sex, data = Orthodont, random = ~ 1)
 PermTest(fm2,B=100)
-
+}
 
   }
 \keyword{ htest }
