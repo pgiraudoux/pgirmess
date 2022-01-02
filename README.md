@@ -4,7 +4,7 @@ Set of tools for reading, writing and transforming spatial and seasonal data, mo
 
 ## Version >= 2.0.0
 
-It includes functions to interpolate regular positions of points between landmarks, to discretize polylines into regular point positions, link distant observations to points and convert a bounding box in a spatial object. It also provides miscellaneous functions for field ecologists such as spatial statistics and inference on diversity indices or writing data.frame with Chinese characters.
+It includes functions to interpolate regular positions of points between landmarks, to discretize polylines into regular point positions, link distant observations to points and convert a bounding box into a spatial object. It also provides miscellaneous functions for field ecologists such as spatial statistics and inference on diversity indices or writing data.frame with Chinese characters.
 
 ***Warning:** functions of earlier pgirmess versions  dealing with rasters have been deprecated. They can easily and much more efficiently be implemented with [terra](https://cran.r-project.org/web/packages/terra/index.html) ([documentation here](https://rspatial.org/terra/)). Other functions depending on [rgdal](https://cran.r-project.org/web/packages/rgdal/index.html), [rgeos](https://cran.r-project.org/web/packages/rgeos/index.html) and [maptools](https://cran.r-project.org/web/packages/maptools/index.html) (packages no longer maintained from 2023 onwards) have been rewritten and made compatible with [sf](https://cran.r-project.org/web/packages/sf/index.html)*
 
