@@ -3,7 +3,7 @@ kruskalmc <- function (resp,...) {
 }
 
  
-kruskalmc.default <- function (resp, categ, probs = 0.05, cont = NULL,...) 
+kruskalmc.default <- function (resp, categ, alpha = 0.05, cont = NULL,...) 
 {
 		db<-na.omit(data.frame(resp,categ))
 		if(nrow(db)!=length(resp)) warning(paste(length(resp)-nrow(db),"lines including NA have been omitted"))
@@ -27,7 +27,7 @@ kruskalmc.default <- function (resp, categ, probs = 0.05, cont = NULL,...)
             }
         }
         names(difv) <- vname
-        z <- qnorm(probs/(length(lst) * (length(lst) - 1)), lower.tail = FALSE)
+        z <- qnorm(alpha/(length(lst) * (length(lst) - 1)), lower.tail = FALSE)
         lims <- z * sqrt((N * (N + 1)/12) * (1/n[indices[1:length(vname),1]] + 1/n[indices[1:length(vname), 2]]))
         names(lims) <- vname
         stat <- "Multiple comparison test after Kruskal-Wallis"
@@ -44,14 +44,14 @@ kruskalmc.default <- function (resp, categ, probs = 0.05, cont = NULL,...)
         difv<-dif
         choice <- pmatch(cont, c("two-tailed","one-tailed"), nomatch = 3)
         if (choice == 1) {
-            z <- qnorm(probs/(2 * (length(lst) - 1)), lower.tail = FALSE)
+            z <- qnorm(alpha/(2 * (length(lst) - 1)), lower.tail = FALSE)
             lims <- z * sqrt((N * (N + 1))/12 * (1/n[indices[1:length(vname), 
                 1]] + 1/n[indices[1:length(vname), 2]]))
             names(lims) <- vname
             stat <- "Multiple comparison test after Kruskal-Wallis, treatments vs control (two-tailed)"
         }
         if (choice == 2) {
-            z <- qnorm(probs/(length(lst) - 1), lower.tail = FALSE)
+            z <- qnorm(alpha/(length(lst) - 1), lower.tail = FALSE)
             lims <- z * sqrt((N * (N + 1)/12) * (1/n[indices[1:length(vname), 
                 1]] + 1/n[indices[1:length(vname), 2]]))
             names(lims) <- vname
@@ -60,8 +60,8 @@ kruskalmc.default <- function (resp, categ, probs = 0.05, cont = NULL,...)
         if (choice == 3) 
             stop("Values must be 'one-tailed' or 'two-tailed', partial matching accepted")
     }
-    output <- list(statistic = stat, signif.level = probs, dif.com = data.frame(obs.dif = difv, 
-        critical.dif = lims, difference = ifelse((difv - lims) > 0, TRUE, FALSE)))
+    output <- list(statistic = stat, alpha = alpha, dif.com = data.frame(obs.dif = difv, 
+        critical.dif = lims, stat.signif = ifelse((difv - lims) > 0, TRUE, FALSE)))
     class(output) <- c("mc", "list")
     output
 }
