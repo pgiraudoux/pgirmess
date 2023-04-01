@@ -4,7 +4,7 @@ importFrom(boot,boot)
 importFrom(spdep,card,dnearneigh,knearneigh,knn2nb, nb2listw, nbdists, geary.test, moran.test)
 importFrom(grDevices, grey, nclass.FD, nclass.Sturges,nclass.scott)
 importFrom(graphics, abline, axis, lines, pairs, par, plot, points, segments, strwidth, text)
-importFrom(stats, AIC, anova, cor.test, dist,family, formula, ks.test, lm, logLik, lowess,model.frame, na.omit, prop.test, qnorm, quantile,residuals, sd, terms, update)
+importFrom(stats, AIC, anova, cor.test, dist,family, formula, ks.test, lm, logLik, lowess,model.frame, na.omit, pnorm, prop.test, qnorm, quantile,residuals, sd, terms, update)
 importFrom(utils, write.table)
 importFrom(sf, st_as_sf, st_coordinates, st_crs, st_difference, st_drop_geometry, st_polygon, st_sfc)
 
