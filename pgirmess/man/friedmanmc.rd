@@ -26,7 +26,7 @@ friedmanmc(y, groups, blocks,alpha=0.05)
 }
 \references{ Siegel & Castellan (1988) Non parametric statistics for the behavioural sciences. Mc Graw Hill Int. Edt.  }
 
-\seealso{ \code{\link{friedman.test}}}
+\seealso{ \code{\link{friedman.test}}; for other functions about median multiple comparison see package 'PMCMRplus'}
 \examples{
   data(siegelp179)
   attach(siegelp179)
