@@ -21,7 +21,7 @@ Computings are based on euclidian distance. Therefore, the coordinates should be
   a matrix of two columns with the projected coordinates
 }
 
-\seealso{ \code{\link[pgirmess]{distSeg}}, \code{\link[maptools]{gcDestination}} }
+\seealso{ \code{\link[pgirmess]{distSeg}}}
 
 \examples{
 

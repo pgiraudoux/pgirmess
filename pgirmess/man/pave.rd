@@ -26,7 +26,7 @@ pave(cordseg, yc, xc, fix.edge=NULL, ydown = TRUE, output = "list")
   
 }
 
-\seealso{ \code{\link[sp]{SpatialPolygonsDataFrame-class}}, \code{\link[maptools]{readShapePoly}}, \code{\link[rgdal]{readOGR}},\code{\link[sp]{over}}, \code{\link[pgirmess]{diag2edge}} }
+\seealso{\code{\link[sp]{over}}, \code{\link[pgirmess]{diag2edge}}}
 
 \examples{
 

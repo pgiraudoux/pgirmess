@@ -23,7 +23,7 @@ The first two colomns give the first top coordinates, x then y, and the next two
   A vector of directions
 }
 
-\seealso{ \code{\link[pgirmess]{dirProj}}, \code{\link[maptools]{gzAzimuth}} }
+\seealso{ \code{\link[pgirmess]{dirProj}}}
 
 \examples{
 
