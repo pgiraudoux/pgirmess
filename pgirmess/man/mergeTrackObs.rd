@@ -14,6 +14,7 @@ mergeTrackObs(sppdfInt,sppdfObs,obscol=NULL)
   \item{sppdfObs}{\code{\link[sf]{sfc}} object containing points (POINT) (the observations) }
   \item{obscol}{The column number in which the number of observations at this point can be found in sppdfObs, if any (default=NULL, no such data)}
 }
+
 \details{
 Road side counts and faeces collections are often carried out along tracks (paths, roads, transects, trails, etc.). Tracks can be discretized in regular intervals e.g. with \code{\link[pgirmess]{transLines2pix}} or \code{\link{st_thintrack}}, each point being the center of a track interval. mergeTrackobs computes the number of observations that are the closest to each interval (compare to the other intervals) and give it in the column 'nObs'. if the argument 'obscol' is NULL, observations are considered presence/absence. If the number of observations is a true count (0 or any positive number) the argument 'obscol' can be used to identify the column of 'sppdfObs' where those counts must be found. Coordinate reference systems must be the identical.
 }
@@ -21,13 +22,13 @@ Road side counts and faeces collections are often carried out along tracks (path
 \value{
   A \code{\link[sf]{sfc}} object, of POINT geometry, with the following columns:
    \itemize{ 
-  \item{ID}{ ID number} 
-  \item{nObs}{ The number of observations in the interval}
-  \item{geometry} {POINT geometry}
+  \item ID, ID number
+  \item nObs, The number of observations in the interval
+  \item geometry, POINT geometry
   }
 }
 
-\seealso{ \code{\link{transLines2pix}}, \code{\link{st_thintrack}}}
+\seealso{ \code{\link[pgirmess]{transLines2pix}}, \code{\link[pgirmess]{st_thintrack}}}
 
 \examples{
 
